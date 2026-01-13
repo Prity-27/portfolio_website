@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anzuman Ara Prity | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-black selection:bg-black selection:text-white">
+
+    <nav class="fixed w-full z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter"><span class="italic text-gray-400">Prity</span></a>
+            <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="menuBtn" class="md:hidden">MENU</button>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center px-6 pt-20">
+        <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-sm uppercase tracking-[0.3em] text-gray-500 block mb-4">CSE Student @ BAIUST</span>
+                <h1 class="text-6xl md:text-8xl font-serif mb-8 leading-tight">
+                    Anzuman Ara <br><span class="italic text-gray-400">Prity</span>
+                </h1>
+                <p class="max-w-xl text-lg text-gray-600 mb-10 leading-relaxed">
+                    Building digital experiences with a focus on clean code and elegant architecture. Specialized in Web
+                    Development and AI.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#projects"
+                        class="bg-black text-white px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-gray-800 transition-all">View
+                        Work</a>
+                    <a href="#contact"
+                        class="border border-black px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-all">Get
+                        in Touch</a>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <div class="relative">
+                    <img src="assets/image.png" alt="Anzuman Ara Prity"
+                        class="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover border-4 border-gray-200 shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif mb-16">Selected Projects</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="project-card group">
+                    <div class="overflow-hidden bg-white aspect-video mb-6 border border-gray-100">
+                        <img src="assets/taskmanagemant.png" alt="Task Management"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Task Management</h3>
+                    <p class="text-gray-500 uppercase text-xs tracking-widest mb-4">Python / Django</p>
+                    <a href="#" class="inline-block border-b border-black pb-1 text-sm font-medium">View Project</a>
+                </div>
+                <div class="project-card group">
+                    <div class="overflow-hidden bg-white aspect-video mb-6 border border-gray-100">
+                        <img src="assets/realtime.png" alt="Collaborative Platform"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Real-time Platform</h3>
+                    <p class="text-gray-500 uppercase text-xs tracking-widest mb-4">React / Firebase</p>
+                    <a href="#" class="inline-block border-b border-black pb-1 text-sm font-medium">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-serif mb-6">Expertise</h2>
+                <p class="text-gray-600">I focus on creating high-performance applications with a focus on the user
+                    experience.</p>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-tighter">Languages</h4>
+                    <p class="text-xl text-gray-500">C++, Java, Python, JavaScript</p>
+                </div>
+                <div class="border-t border-gray-100 pt-8">
+                    <h4 class="font-bold mb-4 uppercase tracking-tighter">Technologies</h4>
+                    <p class="text-xl text-gray-500">React, Django, Spring Boot, Docker</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 bg-white">
+        <div class="max-w-4xl mx-auto w-full">
+            <h2 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">
+                Let's Connect
+            </h2>
+            <p class="text-xl text-gray-600 mb-16 max-w-2xl">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Send a Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm uppercase tracking-widest mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full border-b border-gray-300 py-3 focus:border-black outline-none transition-colors bg-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm uppercase tracking-widest mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full border-b border-gray-300 py-3 focus:border-black outline-none transition-colors bg-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm uppercase tracking-widest mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full border-b border-gray-300 py-3 focus:border-black outline-none transition-colors bg-transparent resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-black text-white px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-gray-800 transition-all w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Get in Touch</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Email</h4>
+                            <a href="mailto:anzuman.prity@gmail.com"
+                                class="text-xl hover:text-gray-600 transition">anzuman.prity@gmail.com</a>
+                        </div>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Location</h4>
+                            <p class="text-xl">Dhaka, Bangladesh</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Social</h4>
+                            <div class="flex space-x-6 text-lg">
+                                <a href="#" class="hover:text-gray-600 transition">LinkedIn</a>
+                                <a href="#" class="hover:text-gray-600 transition">GitHub</a>
+                                <a href="#" class="hover:text-gray-600 transition">Twitter</a>
+                            </div>
+                        </div>
+                        <div class="pt-8 border-t border-gray-200">
+                            <p class="text-gray-600 leading-relaxed">
+                                Currently pursuing Computer Science & Engineering at BAIUST. Available for freelance
+                                projects and collaborations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 px-6 bg-black text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-5xl md:text-7xl font-serif mb-12">Let's work together.</h2>
+            <a href="mailto:anzuman.prity@gmail.com"
+                class="text-2xl md:text-3xl border-b border-white pb-2 hover:text-gray-400 hover:border-gray-400 transition-all">anzuman.prity@gmail.com</a>
+
+            <div class="mt-24 flex justify-center space-x-12 text-sm uppercase tracking-[0.2em] text-gray-500">
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">GitHub</a>
+                <a href="#" class="hover:text-white transition">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // You can integrate with a backend service or email API here
+            alert('Thank you for your message, ' + name + '! I will get back to you soon.');
+
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
