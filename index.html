@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-white text-black selection:bg-black selection:text-white">
+<body class="bg-gray-100 text-black selection:bg-black selection:text-white">
 
     <nav class="fixed w-full z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
@@ -55,7 +55,6 @@
             </div>
         </div>
     </section>
-
     <section id="projects" class="py-32 px-6 bg-gray-50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-serif mb-16">Selected Projects</h2>
@@ -82,25 +81,57 @@
         </div>
     </section>
 
-    <section id="skills" class="py-32 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+    <section id="skills" class="py-32 px-6 bg-gray-200">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-24 items-start">
+
+            <!-- Left -->
             <div>
-                <h2 class="text-4xl font-serif mb-6">Expertise</h2>
-                <p class="text-gray-600">I focus on creating high-performance applications with a focus on the user
-                    experience.</p>
+                <span class="text-sm uppercase tracking-[0.3em] text-gray-400 block mb-4">
+                    What I Do
+                </span>
+                <h2 class="text-5xl font-serif mb-6 leading-tight">
+                    Expertise
+                </h2>
+                <p class="text-lg text-gray-600 max-w-md leading-relaxed">
+                    I focus on building high-performance, scalable applications with strong attention to user
+                    experience, clean code, and maintainable architecture.
+                </p>
             </div>
-            <div class="space-y-8">
+
+            <!-- Right -->
+            <div class="space-y-12 border-t md:border-t-0 md:border-l border-gray-300 md:pl-16 pt-12 md:pt-0">
+
+                <!-- Languages -->
                 <div>
-                    <h4 class="font-bold mb-4 uppercase tracking-tighter">Languages</h4>
-                    <p class="text-xl text-gray-500">C++, Java, Python, JavaScript</p>
+                    <h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-4">
+                        Languages
+                    </h4>
+                    <div class="flex flex-wrap gap-4 text-lg text-gray-600">
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">C++</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">Java</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">Python</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">JavaScript</span>
+                    </div>
                 </div>
-                <div class="border-t border-gray-100 pt-8">
-                    <h4 class="font-bold mb-4 uppercase tracking-tighter">Technologies</h4>
-                    <p class="text-xl text-gray-500">React, Django, Spring Boot, Docker</p>
+
+                <!-- Technologies -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-4">
+                        Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-4 text-lg text-gray-600">
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">React</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">Django</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">Spring Boot</span>
+                        <span class="px-4 py-2 border border-gray-300 rounded-full">Docker</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <hr class="border-gray-100">
 
     <section id="contact" class="py-32 px-6 bg-white">
         <div class="max-w-4xl mx-auto w-full">
@@ -144,8 +175,8 @@
                     <div class="space-y-8">
                         <div>
                             <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Email</h4>
-                            <a href="mailto:anzuman.prity@gmail.com"
-                                class="text-xl hover:text-gray-600 transition">anzuman.prity@gmail.com</a>
+                            <a href="mailto:anzumprity56@gmail.com"
+                                class="text-xl hover:text-gray-600 transition">anzumprity56@gmail.com</a>
                         </div>
                         <div>
                             <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Location</h4>
@@ -153,11 +184,19 @@
                         </div>
                         <div>
                             <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-2">Social</h4>
-                            <div class="flex space-x-6 text-lg">
-                                <a href="#" class="hover:text-gray-600 transition">LinkedIn</a>
-                                <a href="#" class="hover:text-gray-600 transition">GitHub</a>
-                                <a href="#" class="hover:text-gray-600 transition">Twitter</a>
+                            <div>
+                                <div class="flex space-x-6 text-lg">
+                                    <a href="https://www.linkedin.com/in/anzum-prity-295238394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        target="_blank" class="hover:text-gray-600 transition">LinkedIn</a>
+
+                                    <a href="https://github.com/Prity-27" target="_blank"
+                                        class="hover:text-gray-600 transition">GitHub</a>
+
+                                    <a href="https://www.instagram.com/anzum_prity/" target="_blank"
+                                        class="hover:text-gray-600 transition">Instagram</a>
+                                </div>
                             </div>
+
                         </div>
                         <div class="pt-8 border-t border-gray-200">
                             <p class="text-gray-600 leading-relaxed">
@@ -172,18 +211,50 @@
     </section>
 
     <footer class="py-32 px-6 bg-black text-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-5xl md:text-7xl font-serif mb-12">Let's work together.</h2>
-            <a href="mailto:anzuman.prity@gmail.com"
-                class="text-2xl md:text-3xl border-b border-white pb-2 hover:text-gray-400 hover:border-gray-400 transition-all">anzuman.prity@gmail.com</a>
+        <div class="max-w-6xl mx-auto text-center flex flex-col items-center">
+            <h2 class="text-5xl md:text-7xl font-serif mb-12">
+                Let's work together.
+            </h2>
 
-            <div class="mt-24 flex justify-center space-x-12 text-sm uppercase tracking-[0.2em] text-gray-500">
-                <a href="#" class="hover:text-white transition">LinkedIn</a>
-                <a href="#" class="hover:text-white transition">GitHub</a>
-                <a href="#" class="hover:text-white transition">Resume</a>
+            <a href="mailto:anzumprity56@gmail.com"
+                class="text-2xl md:text-3xl border-b border-white pb-2 hover:text-gray-400 hover:border-gray-400 transition-all mb-24">
+                anzumprity56@gmail.com
+            </a>
+
+            <div class="flex justify-center items-center space-x-12 text-sm uppercase tracking-[0.2em] text-gray-500">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/anzum-prity-295238394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" class="flex items-center space-x-2 hover:text-white transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4zM8 8h3.8v2.2h.1c.53-1 1.82-2.2 3.75-2.2 4 0 4.75 2.6 4.75 6V24h-4v-7.5c0-1.8 0-4-2.5-4s-2.9 2-2.9 3.9V24H8z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Prity-27" target="_blank"
+                    class="flex items-center space-x-2 hover:text-white transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.55-3.87-1.55-.53-1.35-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.8 2.73 1.28 3.4.98.11-.76.41-1.28.74-1.57-2.55-.3-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.65.23 2.87.11 3.17.75.81 1.2 1.85 1.2 3.11 0 4.43-2.69 5.4-5.25 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+
+                <!-- Resume (Instagram link kept as you had) -->
+                <a href="https://www.instagram.com/anzum_prity/" target="_blank"
+                    class="flex items-center space-x-2 hover:text-white transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.9.25 2.3.42.55.22.95.48 1.37.9.42.42.68.82.9 1.37.17.44.36 1.1.42 2.3.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.9-.42 2.3-.22.55-.48.95-.9 1.37-.42.42-.82.68-1.37.9-.44.17-1.1.36-2.3.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.9-.25-2.3-.42a3.6 3.6 0 0 1-2.27-2.27c-.17-.44-.36-1.1-.42-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.9.42-2.3a3.6 3.6 0 0 1 2.27-2.27c.44-.17 1.1-.36 2.3-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.9a5.9 5.9 0 1 0 0 11.8 5.9 5.9 0 0 0 0-11.8zm0 9.7a3.8 3.8 0 1 1 0-7.6 3.8 3.8 0 0 1 0 7.6zm6.1-9.9a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8z" />
+                    </svg>
+                    <span>Instagram</span>
+                </a>
             </div>
         </div>
     </footer>
+
 
     <script src="script.js"></script>
     <script>
